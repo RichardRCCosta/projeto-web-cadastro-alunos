@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Cadastro de Alunos</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="results.html">Resultados</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastro de Alunos e Notas</h1>
+        <form id="student-form">
+            <input type="hidden" id="student-id">
+            <input type="text" id="student-name" placeholder="Nome do Aluno" required>
+            <input type="number" id="student-grade1" placeholder="Nota 1º Trimestre (0.0 a 100.0)" required pattern="^100(\.0{1,2})?$|^\d{1,2}(\.\d{1,2})?$" title="Insira um número decimal de 0 a 100 com até duas casas decimais" max="100">
+            <input type="number" id="student-grade2" placeholder="Nota 2º Trimestre (0.0 a 100.0)" required pattern="^100(\.0{1,2})?$|^\d{1,2}(\.\d{1,2})?$" title="Insira um número decimal de 0 a 100 com até duas casas decimais" max="100">
+            <input type="number" id="student-absences" placeholder="Quantidade de Faltas" required min="0">
+            <input type="text" id="student-subject" placeholder="Disciplina" required>
+            <input type="number" id="student-total-classes" placeholder="Quantidade Total de Aulas" required min="1">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div id="student-list">
+            <!-- Lista de alunos será inserida aqui -->
+        </div>
+        <button id="clear-storage">Limpar Todos os Dados</button>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
