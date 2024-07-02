@@ -8,11 +8,15 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-image: url("header_image.jpg");
+    background-repeat: repeat-x;
+    background-color: #2c879c;
     color: white;
     padding: 20px;
     text-align: center;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -38,15 +42,16 @@ input {
 }
 
 button {
+    margin: 10px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #2c879c;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2c879c;
 }
 
 #results div {
