@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-image: url(header_image.jpg);
+    background-repeat: repeat-x;
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d1ecff;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+#clear-storage {
+    background-color: #e94e77;
+}
+
+#clear-storage:hover {
+    background-color: #d43a5a;
+}
+
+#student-list, #results {
+    margin-top: 20px;
+}
+
+#student-list div, #results div {
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#student-list div p, #results div p {
+    margin: 5px 0;
+}
+
+#student-list div .buttons-group, #results div .buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#student-list div button, #results div button {
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+#student-list div button:hover, #results div button:hover {
+    background-color: #357ab8;
+}
+
+#student-list div .buttons-group button.edit, #student-list div .buttons-group button.delete {
+    padding: 8px 12px;
+    display: inline-block;
+    width: auto;
+}
+
+#student-list div .buttons-group button.delete {
+    background-color: #e94e77;
+}
+
+#student-list div .buttons-group button.delete:hover {
+    background-color: #d43a5a;
+}
+
+#results div button.approve {
+    background-color: #4CAF50;
+}
+
+#results div button.approve:hover {
+    background-color: #45a049;
+}
+
+#results div button.reject {
+    background-color: #f44336;
+}
+
+#results div button.reject:hover {
+    background-color: #e53935;
+}
